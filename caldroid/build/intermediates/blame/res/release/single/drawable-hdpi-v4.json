@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Projects\\HajiKadirRestaurant\\HajiKadir\\caldroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\calendar_next_arrow.png",
+        "source": "D:\\Projects\\HajiKadirRestaurant\\HajiKadir\\caldroid\\src\\main\\res\\drawable-hdpi\\calendar_next_arrow.png"
+    },
+    {
+        "merged": "D:\\Projects\\HajiKadirRestaurant\\HajiKadir\\caldroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\calendar_prev_arrow.png",
+        "source": "D:\\Projects\\HajiKadirRestaurant\\HajiKadir\\caldroid\\src\\main\\res\\drawable-hdpi\\calendar_prev_arrow.png"
+    }
+]

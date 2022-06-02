@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/Location"
+            android:visible="false"
+            android:icon="@mipmap/ic_action_location_w"
+            app:showAsAction="collapseActionView|ifRoom"
+            android:title="Location">
+        </item>
+
+        <item
+            android:id="@+id/Search"
+            android:actionViewClass="android.widget.SearchView"
+            android:icon="@mipmap/ic_action_search"
+            app:showAsAction="collapseActionView|ifRoom"
+            android:title="Search">
+        </item>
+        <item
+            android:id="@+id/MyCart"
+            android:icon="@drawable/ic_menu_cart"
+            app:showAsAction="collapseActionView|ifRoom"
+            android:title="My Cart">
+        </item>
+
+
+        <item
+            android:id="@+id/NewRegistartion"
+            android:icon="@mipmap/ic_action_registration"
+            app:showAsAction="collapseActionView|ifRoom"
+            android:title="New Registartion">
+                <!-- android:icon="@mipmap/ic_action_done"-->
+        </item>
+        <item
+            android:id="@+id/Home"
+            android:title="Home">
+        </item>
+        <item
+            android:id="@+id/UserName"
+            android:title="UserName"
+            >
+        </item>
+        <item
+            android:id="@+id/Login"
+            android:title="Login">
+        </item>
+        <item
+            android:id="@+id/Products"
+            android:title="Products">
+        </item>
+        <item
+            android:id="@+id/MyOrders"
+            android:title="My Orders">
+        </item>
+        <item
+            android:id="@+id/Notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/Promotions"
+            android:visible="false"
+            android:title="Promotions">
+        </item>
+        <item
+            android:id="@+id/AboutUs"
+            android:title="About Us">
+        </item>
+        <item
+            android:id="@+id/ContactUs"
+            android:title="Contact Us">
+        </item>
+        <item
+            android:id="@+id/PrivacyPolicy"
+            android:title="Privacy Policy">
+        </item>
+        <item
+            android:id="@+id/SignOut"
+            android:title="Sign Out"
+            >
+        </item>
+
+</menu>

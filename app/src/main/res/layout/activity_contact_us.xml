@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="winapp.hajikadir.customer.activity.ContactUsActivity">
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/map" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/map"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:background="@color/color_tab_bg"
+                android:layout_height="35dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/company1"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/color_tab_text_selected_bg"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view_micro_line_bg_color"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/company_address1"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_large"
+                    android:padding="5dip"
+                    android:id="@+id/textView2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:padding="5dip"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="62940750 /  90047030"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_large"
+                     />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view_micro_line_bg_color"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:background="@color/color_tab_bg"
+                android:layout_height="35dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/company2"
+                    android:layout_marginLeft="5dip"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/color_tab_text_selected_bg"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view_micro_line_bg_color"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/company_address2"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_large"
+                    android:padding="5dip"
+                    android:id="@+id/textView5" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="90047030 / 67848313"
+                    android:gravity="center|left"
+                    android:padding="5dip"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_large"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
+

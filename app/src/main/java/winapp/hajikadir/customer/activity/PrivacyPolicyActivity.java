@@ -1,0 +1,283 @@
+package winapp.hajikadir.customer.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+
+import winapp.hajikadir.customer.R;
+import winapp.hajikadir.customer.config.StringUtils;
+
+/**
+ * Created by user on 06-Feb-17.
+ */
+
+public class PrivacyPolicyActivity extends AppCompatActivity {
+
+    private Intent mIntent;
+    private ActionBar mActionBar;
+    private TextView mlblTitle,mlblCartNoOfItem;
+    private String privacypolicy = "THANK YOU FOR VISITING US ONLINE AT HTTP://HAJIKADIRFOODCHAINS.SG/. AT HAJI KADIR, WE STRIVE TO DO EVERYTHING WE CAN TO RESPECT THE TRUST CUSTOMERS HAVE IN OUR BRAND AND OUR COMMITMENT TO YOUR PRIVACY IS NO EXCEPTION. WE ARE COMMITTED TO PROTECTING AND SAFEGUARDING CONSUMER PRIVACY ON THE INTERNET. THANKS ONCE AGAIN FOR VISITING OUR WEBSITES AND FOR PLACING YOUR TRUST IN HAJI KADIR.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR’S INTERNET PRIVACY POLICY\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD (“HKFC”) IS PLEASED TO PROVIDE INFORMATION TO ALL OF ITS CUSTOMERS ABOUT ITS PRIVACY POLICY (THE “POLICY”). HAJI KADIR FOOD CHAINS PTE LTD ACKNOWLEDGES AND RESPECTS THE PRIVACY OF INDIVIDUALS. THIS POLICY COVERS THE PERSONAL INFORMATION THAT HAJI KADIR FOOD CHAINS PTE LTD HOLDS AND SETS OUT THE WAY IN WHICH WE WILL COLLECT, USE, DISCLOSE YOUR PERSONAL INFORMATION WHEN YOU VISIT ANY OF THE HAJI KADIR FOOD CHAINS PTE LTD ’S SITE, OR PLACE AN ORDER WITH ONE OF OUR STORES OR VIA TELEPHONE. “PERSONAL INFORMATION” SHALL MEAN ANY INFORMATION ABOUT AN INDIVIDUAL WHO CAN BE IDENTIFIED FROM THAT INFORMATION AND/OR OTHER INFORMATION TO WHICH HAJI KADIR FOOD CHAINS PTE LTD HAS OR IS LIKELY HAVE ACCESS, INCLUDING WITHOUT LIMITATION, INFORMATION SUCH AS NAME, ADDRESS, TELEPHONE NUMBER, E-MAIL ADDRESS, CREDIT CARD DETAILS AND ANY OTHER PERSONAL INFORMATION.\n" +
+            "\n" +
+            "WHEN USING THE HAJI KADIR FOOD CHAINS PTE LTD’S SITES OR SERVICES OR BY PURCHASING OUR PRODUCTS, YOU ACCEPT, CONSENT AND AGREE TO THE TERMS AND CONDITIONS OF THIS POLICY. ON GIVING REASONABLE NOTICE TO HAJI KADIR FOOD CHAINS PTE LTD, YOU MAY AT ANY TIME WITHDRAW ANY CONSENT THAT YOU HAVE GIVEN OR DEEMED TO HAVE BEEN GIVEN WITH RESPECT TO THE COLLECTION, USE OR DISCLOSURE OF YOUR PERSONAL INFORMATION AS STATED IN THIS POLICY. HAJI KADIR FOOD CHAINS PTE LTD WILL INFORM YOU OF THE LIKELY CONSEQUENCES OF WITHDRAWAL OF YOUR CONSENT UPON RECEIPT OF YOUR NOTICE TO WITHDRAW CONSENT. AFTER A REASONABLE PERIOD FOR THE WITHDRAWAL PROCESS TO TAKE PLACE, YOUR PERSONAL INFORMATION WILL NO LONGER BE COLLECTED, USED OR DISCLOSED BY HAJI KADIR FOOD CHAINS PTE LTD TO THE EXTENT OF YOUR WITHDRAWN CONSENT.\n" +
+            "\n" +
+            "PLEASE NOTE THAT HAJI KADIR FOOD CHAINS PTE LTD MAY REVISE THIS POLICY FROM TIME TO TIME WHENEVER NECESSARY AT ITS SOLE DISCRETION, AND YOUR CONTINUED USE OF THE HAJI KADIR FOOD CHAINS PTE LTD’S SITES OR SERVICES OR PATRONAGE AT OUR STORES WILL BE SUBJECT TO THE POLICIES IN FORCE AT THE TIME OF YOUR USE. WE ENCOURAGE YOU TO CHECK THIS POLICY REGULARLY TO STAY INFORMED OF ANY UPDATES OR CHANGES MADE TO THEM. THIS POLICY IS EFFECTIVE AS FROM 1ST JANUARY 2016.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HOW DO WE COLLECT INFORMATION?\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD MAY COLLECT PERSONAL INFORMATION FROM YOU, WHICH WILL GENERALLY OCCUR WHEN YOU EITHER:\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "VISIT OUR WEB SITES;\n" +
+            "ENTER INTO A COMPETITION OR PROMOTION;\n" +
+            "PARTICIPATE IN A SURVEY OR QUESTIONNAIRE;\n" +
+            "SUBSCRIBE TO OUR MAILING LIST;\n" +
+            "REGISTER AS AN E-NEWSLETTER MEMBER;\n" +
+            "APPLY FOR A JOB;\n" +
+            "SUBMIT WEBSITE FEEDBACK; OR\n" +
+            "PLACE AN ORDER VIA STORE, TELEPHONE OR OUR INTERNET SYSTEM.\n" +
+            "THE PURPOSES OF HAJI KADIR FOOD CHAINS PTE LTD COLLECTING PERSONAL INFORMATION FROM YOU ARE SET OUT IN THE SECTION ENTITLED “HOW DO WE USE INFORMATION?” BELOW.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "SENSITIVE INFORMATION\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD WILL NOT COLLECT, USE OR DISCLOSE SENSITIVE INFORMATION (SUCH AS INFORMATION ABOUT RACIAL OR ETHNIC ORIGINS OR POLITICAL OR RELIGIOUS BELIEFS) EXCEPT WITH YOUR SPECIFIC CONSENT OR IN THE CIRCUMSTANCES PERMITTED IN THE SINGAPOREAN PRIVACY LAWS OR ANY OTHER RELATED LAWS IN SINGAPORE.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "COOKIES\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\"COOKIES\" ARE PIECES OF INFORMATION THAT A WEB SITE TRANSFERS TO AN INDIVIDUAL'S HARD DRIVE FOR RECORD-KEEPING PURPOSES. COOKIES ALLOW THE WEB SITE TO REMEMBER IMPORTANT INFORMATION THAT WILL MAKE YOUR USE OF THE SITE MORE CONVENIENT. LIKE MOST WEB SITES, HAJI KADIR FOOD CHAINS PTE LTD USES COOKIES FOR A VARIETY OF PURPOSES IN ORDER TO IMPROVE YOUR ONLINE EXPERIENCE. FOR EXAMPLE, WE TRACK THE TOTAL NUMBER OF VISITORS TO OUR SITE ON AN ANONYMOUS AGGREGATE BASIS. WE MAY ALSO EMPLOY COOKIES SO THAT WE REMEMBER YOU WHEN YOU RETURN TO THE SITE, TO KEEP TRACK OF YOUR PURCHASE HISTORY IF YOU PURCHASE MERCHANDISE ONLINE, TO ADMINISTER CERTAIN CONTESTS AND LUCKY DRAWS OR SWEEPSTAKES AND TO HELP CUSTOMIZE YOUR HAJI KADIR FOOD CHAINS PTE LTD’S WEB EXPERIENCE. WE MAY ASSOCIATE PERSONAL INFORMATION WITH A COOKIE FILE IN THOSE INSTANCES.\n" +
+            "\n" +
+            "PLEASE USE THE OPTIONS IN YOUR WEB BROWSER IF YOU DO NOT WISH TO RECEIVE A COOKIE OR IF YOU WISH TO SET YOUR BROWSER TO NOTIFY YOU WHEN YOU RECEIVE A COOKIE. CLICK ON THE \"HELP\" SECTION OF YOUR BROWSER TO LEARN HOW TO CHANGE YOUR COOKIE PREFERENCES. IF YOU DISABLE ALL COOKIES, YOU MAY NOT BE ABLE TO TAKE ADVANTAGE OF ALL THE FEATURES OF THIS WEB SITE.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "CLICKSTREAM DATA\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "EACH TIME YOU VISIT THE HAJI KADIR FOOD CHAINS PTE LTD SITE OUR SERVER COLLECTS SOME ANONYMOUS INFORMATION, KNOWN AS CLICK-STREAM DATA, INCLUDING THE TYPE OF BROWSER AND SYSTEM YOU ARE USING; THE ADDRESS OF THE SITE YOU HAVE COME FROM AND MOVE TO AFTER YOUR VISIT; THE DATE AND TIME OF YOUR VISIT; AND YOUR SERVER'S IP ADDRESS.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD MAY COLLECT THIS INFORMATION FOR STATISTICAL PURPOSES TO FIND OUT HOW THE WEBSITES IS USED AND NAVIGATED, INCLUDING THE NUMBER OF HITS, THE FREQUENCY AND DURATION OF VISITS, MOST POPULAR SESSION TIMES. HAJI KADIR FOOD CHAINS PTE LTD MAY USE THIS INFORMATION TO EVALUATE AND IMPROVE THE HAJI KADIR FOOD CHAINS PTE LTD’S WEBSITE.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HOW DO WE USE INFORMATION?\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD ONLY GATHERS PERSONAL INFORMATION WHEN VOLUNTARILY SUBMITTED BY YOU. GENERALLY, WE MAY COMBINE INFORMATION THAT WE COLLECT FROM YOU FROM DIFFERENT MEANS AS DESCRIBED ABOVE INTO ONE CUSTOMER BASE AND USE YOUR PERSONAL INFORMATION IN THE WAYS IN WHICH YOU MAY REASONABLY EXPECT, INCLUDING BUT NOT LIMITED, TO FOR ANY OF THE FOLLOWING PURPOSES:\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "TO PROCESS ANY JOB APPLICATION YOU MAY SUBMIT;\n" +
+            "\n" +
+            "\n" +
+            "TO PROCESS ANY ONLINE ORDERING;\n" +
+            "\n" +
+            "\n" +
+            "TO DETERMINE THE NUMBER OF VISITORS TO OUR WEBSITES AND CONDUCT REVIEWS OF OUR SITES;\n" +
+            "\n" +
+            "\n" +
+            "TO FULFILL PRIZES, AWARDS AND PURCHASES;\n" +
+            "\n" +
+            "\n" +
+            "TO RESPOND TO SPECIFIC REQUESTS FROM YOU;\n" +
+            "\n" +
+            "\n" +
+            "TO KEEP YOU INFORMED ABOUT ANY CHANGES TO OUR WEBSITES;\n" +
+            "\n" +
+            "\n" +
+            "TO CONDUCT MARKETING RESEARCH; AND\n" +
+            "\n" +
+            "\n" +
+            "WITH YOUR PERMISSION, TO SEND YOU OFFERS, PROMOTIONS, MARKETING INFORMATION, DISCOUNTS, INFORMATION ABOUT NEW PRODUCT OFFERINGS OR INFORMATION ON PRODUCTS OR SERVICES THAT WE CONSIDER WILL BE OF INTEREST TO YOU BY PHONE, SMS, MAIL, AND/OR EMAIL.\n" +
+            "\n" +
+            "\n" +
+            "WHEN USING THE HAJI KADIR FOOD CHAINS PTE LTD’S ONLINE ORDERING SYSTEM, ADDITIONAL PERSONAL INFORMATION MAY BE COLLECTED FROM YOU FOR THE PURPOSE OF ASSISTING US IN THE DELIVERY OF OUR PRODUCT TO YOUR DOOR AND TO VERIFY AND/OR EFFECT YOUR CREDIT CARD PAYMENT.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "SHARING OF PERSONAL INFORMATION\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "THIRD PARTY DISCLOSURE\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD MAY SHARE STATISTICS AND YOUR PERSONAL INFORMATION WITH COMPANIES THAT ARE RELATED TO HAJI KADIR FOOD CHAINS PTE LTD FOR THE PURPOSE OF RESPONDING TO FEEDBACK, FULFILMENT OF PRIZES, AWARDS AND PURCHASE AND TO SEND YOU OFFERS, PROMOTIONS, MARKETING INFORMATION, DISCOUNTS, INFORMATION ABOUT NEW PRODUCT OFFERINGS OR INFORMATION ON PRODUCTS OR SERVICES THAT WE CONSIDER WILL BE OF INTEREST TO YOU BY PHONE, SMS, MAIL, AND/OR EMAIL. ANY USE OF THIS INFORMATION BY THE HAJI KADIR FOOD CHAINS PTE LTD RELATED COMPANIES WILL COMPLY WITH THIS POLICY.\n" +
+            "\n" +
+            "OUR AGENTS, VENDORS, SERVICE PROVIDERS, OR OTHER UNRELATED COMPANIES MAY BE ENGAGED BY HAJI KADIR FOOD CHAINS PTE LTD TO PERFORM A VARIETY OF FUNCTIONS, SUCH AS, PROCESSING AND FULFILLING ORDERS, ASSISTING WITH PROMOTIONS, PROVIDING TECHNICAL SERVICES FOR OUR WEB SITES, ANALYZING DATA, PROVIDING MARKETING ASSISTANCE, PROVIDING CUSTOMER SERVICE. THESE COMPANIES MAY HAVE ACCESS TO YOUR PERSONAL INFORMATION IF NEEDED TO PERFORM SUCH FUNCTIONS. HOWEVER, THESE COMPANIES MAY ONLY USE SUCH PERSONAL INFORMATION FOR THE PURPOSE OF PERFORMING THAT FUNCTION AND MAY NOT USE IT FOR ANY OTHER PURPOSE.\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD RESERVES THE RIGHT TO USE OR DISCLOSE ANY INFORMATION AS NECESSARY OR REASONABLY REQUIRED (I) TO COMPLY WITH ANY APPLICABLE LAW, REGULATION, COURT ORDERS, SUBPOENA, ARBITRATION ORDER OR AWARD OR LEGAL REQUEST, (II) TO PROTECT THE INTEGRITY OF THE SITE, (III) TO FULFILL YOUR REQUESTS OR TO COMPLETE A TRANSACTION FOR YOU, (IV) TO COOPERATE IN ANY LAW ENFORCEMENT INVESTIGATION OR AN INVESTIGATION ON A MATTER OF PUBLIC SAFETY, OR (V) TO PROTECT HAJI KADIR FOOD CHAINS PTE LTD ’S OR ITS AFFILIATES’ OR RELATED COMPANIES’ RIGHTS, PROPERTY OR SAFETY OR THE RIGHTS, PROPERTY OR SAFETY OF HAJI KADIR FOOD CHAINS PTE LTD ’S USERS.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "RETENTION OF PERSONAL INFORMATION\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD WILL CEASE TO RETAIN YOUR PERSONAL INFORMATION OR REMOVE THE MEANS BY WHICH THE PERSONAL INFORMATION CAN BE ASSOCIATED WITH YOU AS SOON AS IT IS REASONABLE TO ASSUME THAT THE PERSONAL INFORMATION IS NO LONGER NECESSARY FOR ANY BUSINESS OR LEGAL PURPOSES.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "LINKS TO OTHER SITES\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD’S SITES MAY CONTAIN HYPERLINKS TO OTHER EXTERNAL WEB SITES THAT ARE NOT MAINTAINED BY HAJI KADIR FOOD CHAINS PTE LTD AS A COURTESY TO OUR USERS. HAJI KADIR FOOD CHAINS PTE LTD DOES NOT ENDORSE NOR IS HAJI KADIR FOOD CHAINS PTE LTD RESPONSIBLE FOR THE PRIVACY PRACTICES OR THE CONTENT OF THESE OTHER WEB SITES AND SHALL NOT BE LIABLE FOR ANY DAMAGES, LOSS, OR UNAUTHORISED COLLECTION, USE AND/OR DISCLOSURE OF YOUR PERSONAL INFORMATION FROM ACCESS TO THOSE WEB SITES. USE OF THE HYPERLINKS AND ACCESS TO SUCH WEB SITES ARE ENTIRELY AT YOUR OWN RISK.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "ACCESS, ACCURACY AND SECURITY\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJI KADIR FOOD CHAINS PTE LTD WILL TAKE REASONABLE STEPS TO ENSURE THAT THE PERSONAL INFORMATION COLLECTED IS REASONABLY ACCURATE, COMPLETE AND UP-TO-DATE. WE WILL TAKE REASONABLE STEPS TO PROTECT PERSONAL INFORMATION FROM MISUSE, LOSS AND UNAUTHORISED ACCESS, COLLECTION, USE, MODIFICATION OR DISCLOSURE.\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "YOU ARE IN CONTROL OF ANY PERSONAL INFORMATION YOU PROVIDE TO US ONLINE. IF AT ANY TIME, YOU WOULD LIKE TO CORRECT THE PERSONAL INFORMATION WE HAVE ABOUT YOU OR IF YOU WOULD LIKE TO CHANGE YOUR PREFERENCES FOR CONTACTS FROM US OR ON BEHALF OF OUR BUSINESS PARTNERS, YOU CAN LET US KNOW BY CONTACTING US AT THE EMAIL OR POSTAL ADDRESS LISTED BELOW.\n" +
+            "\n" +
+            "IN ORDER TO REVIEW ANY PERSONAL INFORMATION WE HAVE ABOUT YOU OR TO ASK US TO DELETE THAT INFORMATION OR TO STOP FURTHER USE OF THE INFORMATION, PLEASE SEND TO HTTP://HAJIKADIRFOODCHAINS.SG/\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HOW TO CONTACT US?\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "IF YOU HAVE ANY QUESTIONS ABOUT THIS POLICY, IF YOU WOULD LIKE TO WITHDRAW YOUR CONSENT FOR OUR PROPOSED COLLECTION, USE AND DISCLOSURE OF YOUR PERSONAL INFORMATION AS STATED ABOVE, OR IF YOU WOULD LIKE TO STOP RECEIVING ANY COMMUNICATIONS FROM US, PLEASE CONTACT US AT:\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "HAJIKADIR FOOD CHAINS PTE LTD \n" +
+            "HAJI KADIR-TAMPINES  \n" +
+            "BLK 820 TAMPINES STREET 81 , #01-534, \n" +
+            "SINGAPORE - 520820\n" +
+            "\n" +
+            "\n" +
+            "HAJIKADIR FOOD CHAINS PTE LTD \n" +
+            "GOLDEN MILE FOOD CEN  \n" +
+            "505 , BEACH ROAD, #B1-13 & B1-14 \n" +
+            "GOLDEN MILE FOOD CENTRE-199583\n" +
+            "\n";
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_privacy_policy);
+
+
+        mActionBar = getSupportActionBar();
+        View viewActionBar = getLayoutInflater().inflate(R.layout.custom_abs_layout, null);
+        ActionBar.LayoutParams params = new ActionBar.LayoutParams(//Center the textview in the ActionBar !
+                ActionBar.LayoutParams.WRAP_CONTENT,
+                ActionBar.LayoutParams.WRAP_CONTENT,
+                Gravity.LEFT);
+
+        mlblTitle= (TextView) viewActionBar.findViewById(R.id.title);
+        mlblCartNoOfItem= (TextView) viewActionBar.findViewById(R.id.item);
+        mlblTitle.setText(getResources().getString(R.string.title_activity_privacy_policy));
+        mlblCartNoOfItem.setVisibility(View.GONE);
+        mActionBar.setCustomView(viewActionBar, params);
+        mActionBar.setDisplayShowCustomEnabled(true);
+        mActionBar.setDisplayShowTitleEnabled(false);
+        mActionBar.setDisplayHomeAsUpEnabled(true);
+        //abar.setIcon(R.color.transparent);
+        mActionBar.setHomeButtonEnabled(true);
+
+        ((TextView) findViewById(R.id.privacypolicy)).setText(privacypolicy);
+
+        mIntent = new Intent();
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_overflow, menu);
+        menu.findItem(R.id.NewRegistartion).setVisible(false);
+        menu.findItem(R.id.Login).setVisible(false);
+        menu.findItem(R.id.SignOut).setVisible(false);
+        menu.findItem(R.id.UserName).setVisible(false);
+        menu.findItem(R.id.Search).setVisible(false);
+        menu.findItem(R.id.MyCart).setVisible(false);
+        menu.findItem(R.id.MyOrders).setVisible(false);
+        menu.findItem(R.id.Products).setVisible(true);
+        menu.findItem(R.id.Promotions).setVisible(false);
+        menu.findItem(R.id.AboutUs).setVisible(true);
+        menu.findItem(R.id.ContactUs).setVisible(true);
+        menu.findItem(R.id.PrivacyPolicy).setVisible(false);
+
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            case R.id.Home:
+                mIntent.setClass(this, HomeActivity.class);
+                mIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(mIntent);
+                return true;
+            case R.id.Products:
+                mIntent.setClass(this, ProductActivity.class);
+                mIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                mIntent.putExtra(StringUtils.EXTRA_CATEGORY_ID,"");
+                mIntent.putExtra(StringUtils.EXTRA_PRODUCT, "Product");
+                startActivity(mIntent);
+                return true;
+            case R.id.Promotions:
+                // TODO Something when menu item selected
+                return true;
+            case R.id.AboutUs:
+                // TODO Something when menu item selected
+                mIntent.setClass(this, AboutUsActivity.class);
+                mIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(mIntent);
+                return true;
+            case R.id.ContactUs:
+                // TODO Something when menu item selected
+                mIntent.setClass(this, ContactUsActivity.class);
+                mIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(mIntent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}

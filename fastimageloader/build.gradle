@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+//ext {
+//    PUBLISH_GROUP_ID = 'com.theartofdev'
+//    PUBLISH_ARTIFACT_ID = 'fast-image-loader'
+//    PUBLISH_VERSION = '0.8.4'
+//    // gradlew clean build generateRelease
+//}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+
+dependencies {
+     //optional 'com.squareup.okhttp:okhttp:2.2.+'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+}

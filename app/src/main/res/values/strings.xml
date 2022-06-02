@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Haji Kadir Restaurant</string>
+
+    <string name="company1"> HAJI KADIR FOOD CHAIN PTE LTD - GOLDEN MILE FOOD</string>
+    <string name="company2"> HAJI KADIR FOOD CHAIN PTE LTD- TAMPINES</string>
+    <string name="company_address1">505 , BEACH ROAD
+GOLDEN MILE FOOD CENTRE
+SINGAPORE</string>
+
+    <string name="company_address2">820 , TAMPINES STREET 81
+SINGAPORE</string>
+    <string name="app_name_full_name">Haji Kadir \n Food Chain Pte Ltd</string>
+    <string name="company_name">winapp solutions pte ltd</string>
+    <string name="copyright">© Winapp Solutions Pte Ltd 2016</string>
+    <string name="website">www.winapp.com.sg</string>
+    <!-- Slider -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_home">Haji Kadir</string>
+
+    <string name="title_activity_Product">Product</string>
+    <string name="oops">"Oops..."</string>
+    <string name="no_record_found">"No Record Found...!"</string>
+
+    <string name="title_activity_my_cart">Shopping Cart</string>
+    <string name="title_activity_my_account">My Account</string>
+
+    <string name="connecting">Connecting</string>
+    <string name="no_network_connection">No Network Connection</string>
+    <string name="search_products">Search products</string>
+
+    <string name="home">Home</string>
+    <string name="products">Products</string>
+    <string name="myorder">MyOrder</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="myAccount">MyAccount</string>
+    <string name="prompt_search">Search</string>
+
+    <string name="prompt_product_modifier">Product Modifier</string>
+
+    <string name="prompt_continue">Continue</string>
+    <string name="prompt_payable_amount">Payable Amount : </string>
+    <string name="prompt_sub_total">SubTotal : </string>
+    <string name="prompt_total">Total : </string>
+    <string name="prompt_service_charges">Service Charges : </string>
+    <string name="action_done">Done</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
+    <string name="total">Total</string>
+
+    <string name="product_price">Product Price</string>
+    <string name="payable_amount">Payable Amount </string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="continues">Continue</string>
+    <string name="description">Description</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="password_is_not_same_as_confirm_password">Password is not same as confirm password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_registration">Register</string>
+    <string name="prompt_username">User Name</string>
+    <string name="action_next">Next</string>
+    <string name="prompt_remember_me">Remember Me</string>
+    <string name="image_login">Image Login</string>
+    <string name="error_invalid_username">This UserName is invalid</string>
+    <string name="invalid_username_or_password">Invalid UserName or Password</string>
+    <string name="unable_to_login">Unable to login. Please try again later</string>
+    <string name="successfully_login">Successfully Login</string>
+    <string name="unable_to_send_reg_id_to_server">Unable to Send Reg Id to server. Please try again later</string>
+
+
+    <string name="unable_to_get_address">Unable to get Address. Please try again later</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="create_account">Create account</string>
+    <string name="new_customer">New Customer?</string>
+    <string name="create_your_account">Create your account</string>
+
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_now">Sign in now</string>
+
+
+    <string name="company">Company</string>
+    <string name="address1">Address1</string>
+    <string name="address2">Address2</string>
+    <string name="country">Country</string>
+
+    <string name="postal_code">Postal Code</string>
+    <string name="user">User</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No</string>
+    <string name="name">Name</string>
+    <string name="model">Model</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="contact">Contact</string>
+    <string name="address">Address</string>
+
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="title_activity_delivery">Delivery</string>
+    <string name="title_activity_payment">Select Payment Method</string>
+    <string name="title_activity_my_order">My Order</string>
+    <string name="title_activity_my_order_detail">My Order Detail</string>
+    <string name="title_activity_my_aacount">My Account</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_activity_registrataion">Registration</string>
+
+    <string name="prompt_start_date">Start Date</string>
+    <string name="prompt_end_date">End Date</string>
+
+    <string name="prompt_add">Add</string>
+
+    <string name="prompt_skip">Skip</string>
+
+    <string name="prompt_modifier">Modifier</string>
+
+    <string name="prompt_no_record_found">No Record Found !</string>
+    <string name="status">Status</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_total">Order Total</string>
+    <string name="order_no">Order No</string>
+
+    <string name="select_a_delivery_address">Select a delivery address</string>
+
+    <string name="prompt_deliver_to_this_address">Deliver to this address</string>
+    <string name="title_activity_delivery_method">Delivery Method</string>
+
+    <string name="title_activity_payment_method">Payment Method</string>
+
+
+    <string name="please_select_the_preferred_shipping_method_to_use_on_this_order">Please select the preferred shipping method to use on this order.</string>
+
+    <string name="delivery_charges">Delivery charges</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="total_distance">Total distance</string>
+
+
+    <string name="pick_up">Pick up</string>
+
+    <string name="pickup_from_store">Pickup from store</string>
+
+    <string name="view_all_orders">View All Orders</string>
+    <string name="my_address">My Address</string>
+    <string name="please_select_the_preferred_payment_method_to_use_on_this_order">Please select the preferred payment method to use on this order.</string>
+
+    <string name="postalcode_error">Please enter valid postal code using search button</string>
+</resources>

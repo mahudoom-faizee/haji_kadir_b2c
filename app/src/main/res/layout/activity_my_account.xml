@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:id="@+id/activity_my_account"
+    tools:context="winapp.hajikadir.customer.activity.MyAccountActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/color_app_bg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/toolbar_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_title_layout"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dip"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="2dp"
+            android:visibility="visible">
+
+
+                <ImageView
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    card_view:srcCompat="@mipmap/ic_my_account_icon"
+                    android:id="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dip"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/phoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_marginTop="15dip"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textStyle="normal" />
+
+
+            <TextView
+                    android:id="@+id/emailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dip"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="1dp"
+                android:paddingTop="2dp"
+
+                android:visibility="visible">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:layout_margin="4dp"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardCornerRadius="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:background="@color/cardview_light_background"
+                    android:drawablePadding="5dip"
+                    android:gravity="left|center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                    android:hint="@string/title_activity_my_order"
+                    android:padding="5dip"
+                    android:textColorHint="@color/colorDarkGrey" />
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dip"
+                            android:visibility="visible"
+                            android:background="@color/view_micro_line_bg_color"/>
+                    <TextView
+                        android:id="@+id/viewALlOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_margin="5dip"
+                        android:background="@color/cardview_light_background"
+                        android:drawablePadding="5dip"
+                        android:gravity="center|right"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAllCaps="true"
+                        android:text="@string/view_all_orders"
+                        android:padding="5dip"
+                        android:textColorHint="@color/colorDarkGrey" />
+            </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="1dp"
+
+                    android:visibility="visible">
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_search1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardCornerRadius="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginTop="10dip"
+                                android:padding="5dip"
+                                android:layout_marginBottom="2dip"
+                                android:background="@color/cardview_light_background"
+                                android:gravity="left|bottom"
+                                android:hint="@string/my_address"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColorHint="@color/colorDarkGrey" />
+
+                            <TextView
+                                android:id="@+id/address1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:background="@color/cardview_light_background"
+                                android:gravity="top|left"
+                                android:padding="5dip"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textAllCaps="true"
+                                android:text=""
+                                android:textColorHint="@color/colorDarkGrey" />
+                            <TextView
+                                android:id="@+id/address2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:background="@color/cardview_light_background"
+                                android:gravity="top|left"
+                                android:textSize="14sp"
+                                android:padding="5dip"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textAllCaps="true"
+                                android:text=""
+                                android:textColorHint="@color/colorDarkGrey" />
+                            <TextView
+                                android:id="@+id/postalcode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:textSize="14sp"
+                                android:background="@color/cardview_light_background"
+                                android:gravity="top|left"
+                                android:padding="5dip"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textAllCaps="true"
+                                android:text=""
+                                android:textColorHint="@color/colorDarkGrey" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
+  <!--  <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/layout_bottom_sheet" />
+-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom_sheet"
+        app:layout_behavior="winapp.hajikadir.customer.util.QuickReturnFooterBehavior"
+        layout="@layout/layout_bottom_sheet" />
+
+</android.support.design.widget.CoordinatorLayout>

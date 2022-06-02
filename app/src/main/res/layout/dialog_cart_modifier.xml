@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/color_tab_bg"
+        android:layout_height="50dip">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dip"
+            android:text="@string/prompt_product_modifier"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textColor="@color/color_tab_text_selected_bg"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dip"
+            android:src="@mipmap/ic_action_tick"/>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:src="@mipmap/ic_action_close"/>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:numColumns="1"
+        android:layout_height="match_parent"/>
+</LinearLayout>

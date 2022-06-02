@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dip">
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_action_home_inactive"
+            android:id="@+id/bottom_home_img" />
+
+        <TextView
+            android:text="@string/home"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_inactive_text_bg"
+            android:textSize="@dimen/text_size_small"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_home_txt" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/product_layout"
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/bottom_product_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_action_product_inactive" />
+
+        <TextView
+            android:text="@string/products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_inactive_text_bg"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/bottom_product_txt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myorder_layout"
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_action_myorder_inactive"
+            android:id="@+id/bottom_myorder_img" />
+
+        <TextView
+            android:text="@string/myorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_inactive_text_bg"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/bottom_myorder_txt" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/registration_layout"
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_action_wishlist_inactive"
+            android:id="@+id/bottom_wishlist_img" />
+
+        <TextView
+            android:text="@string/title_activity_registrataion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_inactive_text_bg"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/bottom_wishlist_txt" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myaccount_layout"
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_action_account_inactive"
+            android:id="@+id/bottom_myaccount_img" />
+
+        <TextView
+            android:text="@string/myAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_inactive_text_bg"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/bottom_myaccount_txt" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/ic_action_home"
+        android:title="HOME" />
+    <item
+        android:id="@+id/nav_my_order"
+        android:icon="@mipmap/ic_action_order"
+        android:title="MY ORDER" />
+
+    <item
+        android:id="@+id/nav_special_offer"
+        android:icon="@mipmap/ic_action_offer"
+        android:title="SPECIAL OFFERS" />
+
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@mipmap/ic_action_food_menu"
+        android:title="FOOD MENU" />
+     
+    <item
+        android:id="@+id/nav_feed_back"
+        android:icon="@mipmap/ic_action_feed_back"
+        android:title="FEED BACK" />
+
+    <item
+        android:id="@+id/nav_terms_conditions"
+        android:icon="@mipmap/ic_action_term_condition"
+        android:title="TERMS &amp; CONDITIONS" />
+
+    </group>
+
+
+</menu>

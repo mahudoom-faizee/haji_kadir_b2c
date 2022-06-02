@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delivery_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_app_bg"
+    tools:context="winapp.hajikadir.customer.activity.DeliveryAddressActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="35dip">
+    <TextView
+        android:text="@string/select_a_delivery_address"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@android:color/black"
+        android:padding="3dip"
+        android:layout_height="35dip"/>
+
+
+    <Button
+        android:id="@+id/addNewAddress"
+        android:layout_width="wrap_content"
+        android:text="Add New Address"
+        android:textSize="12sp"
+        android:layout_margin="1dip"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:visibility="gone"
+        android:background="@drawable/group_row"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:id="@+id/radioButton"
+           />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:layout_margin="2dip"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:id="@+id/name" />
+
+            <TextView
+                android:text="address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:layout_margin="2dip"
+                android:textColor="@android:color/black"
+                android:id="@+id/address1" />
+            <TextView
+                android:text="@string/address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:layout_margin="2dip"
+                android:textColor="@android:color/black"
+                android:id="@+id/address2" />
+            <TextView
+                android:text="postalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:layout_margin="2dip"
+                android:textColor="@android:color/black"
+                android:id="@+id/postalCode" />
+            <TextView
+                android:text="phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:layout_margin="2dip"
+                android:textColor="@android:color/black"
+                android:id="@+id/phoneNo" />
+
+            <TextView
+                android:text="changeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:id="@+id/changeAddress" />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addressRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:visibility="visible"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/btnDeliver"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dip"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="true"
+        android:text="@string/prompt_deliver_to_this_address" />
+</LinearLayout>

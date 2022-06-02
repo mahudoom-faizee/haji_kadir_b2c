@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbab18"
+    tools:context="winapp.hajikadir.customer.activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_splash_img"
+        android:adjustViewBounds="true"/>
+
+ <LinearLayout
+     android:layout_below="@+id/imageView1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_margin="3dip"
+     android:gravity="bottom"
+     android:orientation="vertical">
+   <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="50dp"
+       android:layout_gravity="center"
+       android:layout_height="50dp"
+       android:indeterminateDrawable="@drawable/progress_spinner"
+       android:visibility="visible" >
+   </ProgressBar>
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/connecting"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_marginBottom="8dp"
+       android:textColor="@android:color/white"
+       android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/copyright"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|center"
+         android:textStyle="bold"
+         android:layout_marginTop="2dp"
+         android:textSize="@dimen/text_size_small"
+         android:textColor="@android:color/white"
+         android:text="@string/copyright"
+         />
+
+     <TextView
+         android:id="@+id/website"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center|bottom"
+         android:layout_marginBottom="2dp"
+         android:textStyle="bold"
+         android:textSize="@dimen/text_size_small"
+         android:textColor="@android:color/white"
+         android:text="@string/website"
+         />
+ </LinearLayout>
+</RelativeLayout>
+
+
+
+

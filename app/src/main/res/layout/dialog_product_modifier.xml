@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:background="@color/color_tab_bg"
+        android:orientation="horizontal" >
+
+           <TextView
+            android:id="@+id/title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_marginLeft="10dip"
+            android:text="@string/prompt_product_modifier"
+            android:textColor="@color/color_tab_text_selected_bg"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:src="@mipmap/ic_action_close"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="10dip"
+    android:orientation="horizontal"
+    android:layout_height="120dip">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_empty_image"
+      />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:id="@+id/prodDetailLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblProdName"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:ellipsize="end"
+            android:gravity="center|bottom"
+            android:maxLines="2"
+            android:paddingLeft="3dip"
+            android:textColor="@android:color/black"
+            android:text="khh khkkhklhkjhkj hghgh gjhgkgkg"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_medium"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="3dip"
+        android:text="$"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/lblProdModifierPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="3dip"
+        android:text="0.00"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lblProdPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="3dip"
+        android:text="0.00"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:background="@color/color_app_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/qty_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:visibility="visible"
+                android:src="@mipmap/ic_minus_icon" />
+
+            <TextView
+                android:id="@+id/lblQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/qty_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:visibility="visible"
+                android:src= "@mipmap/ic_plus_icon" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="0dip"
+    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dip"
+            android:text="@string/prompt_modifier"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:id="@+id/view"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal" >
+
+        <!-- Yes button -->
+        <Button
+
+            android:id="@+id/add"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@null"
+            android:text="@string/prompt_add"
+            android:textColor="@android:color/white"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <!-- No Button -->
+        <View
+            android:layout_width="0.1dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="8dp"
+            android:layout_height="match_parent"
+            android:text="@string/prompt_skip"
+            android:textColor="@android:color/white"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="normal" />
+    </LinearLayout>
+</LinearLayout>
